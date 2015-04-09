@@ -1,0 +1,38 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Analizador Morfologico</title>
+		<link rel="stylesheet" type="text/css" href="{% static "analizador/style.css" %}">
+	</head>
+	{% autoescape off %}
+	<body>
+		<div>
+			<h1>Analizador Morfologico - PLN</h1>
+		    <hr /><br />
+			<p>Ingrese un texto y de click en el boton Enviar para que sea analizado:</p>
+		    <form action="/analizar/" method="POST">
+		        {% csrf_token %}
+		        {{ form.contenido }}
+		        <br /><br />
+		        <input id="boton" type="submit" value="Enviar">
+			</form>
+			<br />
+			<hr />
+		</div>
+		{% if texto %}
+			<div>
+				<div>
+					<h2>RESULTADO</h2>
+					<h4>TEXTO FUENTE:</h4>
+					<blockquote>{{ texto }}</blockquote>
+				</div>
+				<div>
+					<h4>ANALISIS: <br /> FORMA (F) | LEMA (L) (Wc=Wikicorpus o Fl= Freeling) | TAG (T) | DESCRIPCION TAG (DT) </h4>
+					{{ respuesta | linebreaks }}
+				</div>
+			</div>
+		{% endif %}
+	</body>
+	{% endautoescape %}
+</html>

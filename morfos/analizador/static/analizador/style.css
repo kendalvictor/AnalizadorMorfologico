@@ -1,0 +1,140 @@
+body {
+	background-color: #f2f0ed;
+}
+
+body > div {
+	width: 95%;
+	margin: auto;
+	padding: 20px;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	background: -webkit-linear-gradient(90deg, #D1913C 10%, #FFD194 90%); /* Chrome 10+, Saf5.1+ */
+  	background:    -moz-linear-gradient(90deg, #D1913C 10%, #FFD194 90%); /* FF3.6+ */
+  	background:     -ms-linear-gradient(90deg, #D1913C 10%, #FFD194 90%); /* IE10 */
+  	background:      -o-linear-gradient(90deg, #D1913C 10%, #FFD194 90%); /* Opera 11.10+ */
+  	background:         linear-gradient(90deg, #D1913C 10%, #FFD194 90%); /* W3C */
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 0px 1px 1px #4d4d4d;
+	color: #222;
+	font-size: 50px;
+	color: #7c795d; font-family: 'Trocchi', serif; font-size: 45px; font-weight: normal; line-height: 48px; margin: 0;
+}
+
+h2 { 
+	color: #7c795d; 
+	font-family: 'Source Sans Pro', sans-serif; 
+	font-size: 28px; font-weight: 400; 
+	line-height: 32px; margin: 0 0 24px; 
+}
+
+h4, .titulo {
+	font-family: 'Inder', sans-serif; line-height: 28px; margin-bottom: 15px; color: #666;
+}
+
+p { 
+	color: #4c4a37; 
+	font-family: 'Source Sans Pro', sans-serif; 
+	font-size: 18px; 
+	line-height: 32px; 
+	margin: 0 0 24px; 
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+#id_contenido {
+	width: 600px;
+	height: 260px;
+	border: 3px double #CCCCCC;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+blockquote {
+	background: #f9f9f9;
+  	border-left: 10px solid #ccc;
+  	margin: 1.5em 10px;
+  	padding: 0.5em 10px;
+  	quotes: "\201C""\201D""\2018""\2019";
+  	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius: 5px;
+}
+
+blockquote:before {
+	color: #ccc;
+  	content: open-quote;
+  	font-size: 4em;
+  	line-height: 0.1em;
+  	margin-right: 0.25em;
+  	vertical-align: -0.4em;
+}
+
+blockquote p {
+	display: inline;
+}
+
+.valores {
+	margin-right: 10px;
+	color: #f2f0ed;
+	background-color: #4D4D94;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius: 5px;
+	padding: 6px;
+}
+
+#boton {
+	-moz-box-shadow: 0px 1px 0px 0px #fff6af;
+	-webkit-box-shadow: 0px 1px 0px 0px #fff6af;
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+	background:-moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23',GradientType=0);
+	background-color:#ffec64;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+
+#boton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+	background:-moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64',GradientType=0);
+	background-color:#ffab23;
+}
+
+#boton:active {
+	position:relative;
+	top:1px;
+}
